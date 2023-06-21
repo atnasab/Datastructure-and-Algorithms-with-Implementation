@@ -51,3 +51,81 @@ To search for a value in a Binary Search Tree, perform the following steps:
 5. Repeat steps 2-4 until the value is found or an empty child node is reached, in which case return false.
 
 These algorithms can be used to perform the basic operations on a Binary Search Tree, including insertion, deletion, and searching. By using these algorithms effectively, you can create and manipulate Binary Search Trees to suit your needs.
+## Conclusion
+
+In conclusion, Binary Search Trees are a powerful and efficient data structure for organizing and searching through large sets of data. Implementing a Binary Search Tree in Python is relatively straightforward and can be accomplished with just a few classes and methods.
+
+Here are the binary search trees of height 2, 3, 4, 5, and 6 for the set {1, 4, 5, 10, 16, 17, 21}:
+
+### Height 2
+
+```
+      10
+     /  \\
+    4   16
+   /     / \\
+  1     15  21
+
+```
+
+### Height 3
+
+```
+        10
+     /      \\
+    4        16
+   /  \\     /  \\
+  1    5   15   21
+          \\
+           6
+
+```
+
+### Height 4
+
+```
+       10
+     /     \\
+    4       16
+   / \\     /  \\
+  1   5  15    21
+     / \\
+    3   6
+
+```
+
+### Height 5
+
+```
+         10
+      /      \\
+     4        16
+   /   \\     /   \\
+  1     5  15     21
+       / \\   \\
+      3   6   17
+               \\
+                18
+
+```
+
+### Height 6
+
+```
+         10
+      /      \\
+     4        16
+   /   \\     /   \\
+  1     5  15     21
+       / \\   \\
+      3   6   17
+             /  \\
+           16.5  18
+
+```
+
+The binary search tree property is that for each node in the tree, the values in its left subtree are less than its own value, and the values in its right subtree are greater than its own value. On the other hand, the min heap property states that each node's value is less than or equal to the values of its children.
+
+The min heap property cannot be used to print out the keys of an n node tree in sorted order in O(n) time. While a binary search tree can be traversed in-order to print out the values in sorted order, a min heap only guarantees that the minimum value is at the root node. To print out the values in sorted order, you would need to extract the minimum value from the root of the heap and then rebuild the heap, which takes O(log n) time. This operation would need to be repeated n times, resulting in a total time complexity of O(n log n), which is not linear.
+
+Therefore, while both binary search trees and min heaps are useful data structures, they serve different purposes and have different properties that make them better suited for different tasks.
