@@ -129,3 +129,4 @@ The binary search tree property is that for each node in the tree, the values in
 The min heap property cannot be used to print out the keys of an n node tree in sorted order in O(n) time. While a binary search tree can be traversed in-order to print out the values in sorted order, a min heap only guarantees that the minimum value is at the root node. To print out the values in sorted order, you would need to extract the minimum value from the root of the heap and then rebuild the heap, which takes O(log n) time. This operation would need to be repeated n times, resulting in a total time complexity of O(n log n), which is not linear.
 
 Therefore, while both binary search trees and min heaps are useful data structures, they serve different purposes and have different properties that make them better suited for different tasks.
+[Try it yourself](https://www.cs.usfca.edu/~galles/visualization/BST.html)
